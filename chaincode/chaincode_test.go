@@ -11,7 +11,6 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/akkagao/citizens/common"
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 )
 
@@ -93,13 +92,13 @@ func TestRegister(t *testing.T) {
 	scc := new(CitizensChain)
 	stub := shim.NewMockStub("CitizensChain", scc)
 	checkInit(t, stub, [][]byte{[]byte("init"), []byte("citizensChain")})
-	people := common.People{
+	people := People{
 		DataType:      "citizens",
 		Id:            "535636789302345673",
 		Sex:           "男",
 		Name:          "张三",
-		BirthLocation: common.Location{Province: "海南", City: "三亚市", Detail: "天涯海角"},
-		LiveLocation:  common.Location{Province: "北京", Town: "朝阳区", Detail: "大悦城"},
+		BirthLocation: Location{Province: "海南", City: "三亚市", Detail: "天涯海角"},
+		LiveLocation:  Location{Province: "北京", Town: "朝阳区", Detail: "大悦城"},
 		MotherId:      "535636789302345671",
 		FatherId:      "535636789302345672",
 		Childs:        []string{"535636789302345674", "535636789302345675"},

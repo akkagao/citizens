@@ -1,0 +1,6 @@
+
+127.0.0.1 ebbyte.com
+127.0.0.1 orderer.ebbyte.com
+127.0.0.1 akka.ebbyte.com
+127.0.0.1 peer0.akka.ebbyte.com
+127.0.0.1 peer1.akka.ebbyte.com

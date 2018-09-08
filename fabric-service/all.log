@@ -1,0 +1,216 @@
+The FABRIC_ARCH variable is not set. Defaulting to a blank string.
+The FABRIC_ARCH_SEP variable is not set. Defaulting to a blank string.
+The FABRIC_BASE_DOCKER_REGISTRY variable is not set. Defaulting to a blank string.
+Creating network "citizens_default" with the default driver
+Creating citizens_orderer_1 ... 
+[1A[2KCreating citizens_orderer_1 ... [32mdone[0m[1BCreating citizens_FBIpeer2_1 ... 
+Creating citizens_FBIpeer1_1 ... 
+[2A[2KCreating citizens_FBIpeer2_1 ... [32mdone[0m[2B[1A[2KCreating citizens_FBIpeer1_1 ... [32mdone[0m[1BAttaching to citizens_orderer_1, citizens_FBIpeer2_1, citizens_FBIpeer1_1
+[36morderer_1   |[0m 2018-09-08 09:29:51.056 UTC [orderer/common/server] prettyPrintStruct -> INFO 001[0m Orderer config values:
+[36morderer_1   |[0m 	General.LedgerType = "file"
+[36morderer_1   |[0m 	General.ListenAddress = "0.0.0.0"
+[36morderer_1   |[0m 	General.ListenPort = 7050
+[36morderer_1   |[0m 	General.TLS.Enabled = true
+[36morderer_1   |[0m 	General.TLS.PrivateKey = "/etc/hyperledger/tls/orderer/server.key"
+[36morderer_1   |[0m 	General.TLS.Certificate = "/etc/hyperledger/tls/orderer/server.crt"
+[36morderer_1   |[0m 	General.TLS.RootCAs = [/etc/hyperledger/tls/orderer/ca.crt]
+[36morderer_1   |[0m 	General.TLS.ClientAuthRequired = false
+[36morderer_1   |[0m 	General.TLS.ClientRootCAs = []
+[36morderer_1   |[0m 	General.Keepalive.ServerMinInterval = 1m0s
+[36morderer_1   |[0m 	General.Keepalive.ServerInterval = 2h0m0s
+[36morderer_1   |[0m 	General.Keepalive.ServerTimeout = 20s
+[36morderer_1   |[0m 	General.GenesisMethod = "file"
+[36morderer_1   |[0m 	General.GenesisProfile = "SampleInsecureSolo"
+[36morderer_1   |[0m 	General.SystemChannel = "testchainid"
+[36morderer_1   |[0m 	General.GenesisFile = "/etc/hyperledger/configtx/orderer.genesis.block"
+[36morderer_1   |[0m 	General.Profile.Enabled = false
+[36morderer_1   |[0m 	General.Profile.Address = "0.0.0.0:6060"
+[36morderer_1   |[0m 	General.LogLevel = "info"
+[36morderer_1   |[0m 	General.LogFormat = "%{color}%{time:2006-01-02 15:04:05.000 MST} [%{module}] %{shortfunc} -> %{level:.4s} %{id:03x}%{color:reset} %{message}"
+[36morderer_1   |[0m 	General.LocalMSPDir = "/etc/hyperledger/msp/orderer"
+[36morderer_1   |[0m 	General.LocalMSPID = "OrdererMSP"
+[36morderer_1   |[0m 	General.BCCSP.ProviderName = "SW"
+[36morderer_1   |[0m 	General.BCCSP.SwOpts.SecLevel = 256
+[36morderer_1   |[0m 	General.BCCSP.SwOpts.HashFamily = "SHA2"
+[36morderer_1   |[0m 	General.BCCSP.SwOpts.Ephemeral = false
+[36morderer_1   |[0m 	General.BCCSP.SwOpts.FileKeystore.KeyStorePath = "/etc/hyperledger/msp/orderer/keystore"
+[36morderer_1   |[0m 	General.BCCSP.SwOpts.DummyKeystore =
+[36morderer_1   |[0m 	General.BCCSP.PluginOpts =
+[36morderer_1   |[0m 	General.BCCSP.Pkcs11Opts =
+[36morderer_1   |[0m 	General.Authentication.TimeWindow = 15m0s
+[36morderer_1   |[0m 	FileLedger.Location = "/var/hyperledger/production/orderer"
+[36morderer_1   |[0m 	FileLedger.Prefix = "hyperledger-fabric-ordererledger"
+[36morderer_1   |[0m 	RAMLedger.HistorySize = 1000
+[36morderer_1   |[0m 	Kafka.Retry.ShortInterval = 5s
+[36morderer_1   |[0m 	Kafka.Retry.ShortTotal = 10m0s
+[36morderer_1   |[0m 	Kafka.Retry.LongInterval = 5m0s
+[36morderer_1   |[0m 	Kafka.Retry.LongTotal = 12h0m0s
+[36morderer_1   |[0m 	Kafka.Retry.NetworkTimeouts.DialTimeout = 10s
+[36morderer_1   |[0m 	Kafka.Retry.NetworkTimeouts.ReadTimeout = 10s
+[36morderer_1   |[0m 	Kafka.Retry.NetworkTimeouts.WriteTimeout = 10s
+[36morderer_1   |[0m 	Kafka.Retry.Metadata.RetryMax = 3
+[36morderer_1   |[0m 	Kafka.Retry.Metadata.RetryBackoff = 250ms
+[36morderer_1   |[0m 	Kafka.Retry.Producer.RetryMax = 3
+[36morderer_1   |[0m 	Kafka.Retry.Producer.RetryBackoff = 100ms
+[36morderer_1   |[0m 	Kafka.Retry.Consumer.RetryBackoff = 2s
+[36morderer_1   |[0m 	Kafka.Verbose = false
+[36morderer_1   |[0m 	Kafka.Version = 0.10.2.0
+[36morderer_1   |[0m 	Kafka.TLS.Enabled = false
+[36morderer_1   |[0m 	Kafka.TLS.PrivateKey = ""
+[36morderer_1   |[0m 	Kafka.TLS.Certificate = ""
+[36morderer_1   |[0m 	Kafka.TLS.RootCAs = []
+[36morderer_1   |[0m 	Kafka.TLS.ClientAuthRequired = false
+[36morderer_1   |[0m 	Kafka.TLS.ClientRootCAs = []
+[36morderer_1   |[0m 	Debug.BroadcastTraceDir = ""
+[36morderer_1   |[0m 	Debug.DeliverTraceDir = ""
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.906 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[33mFBIpeer2_1  |[0m  Version: 1.1.0
+[33mFBIpeer2_1  |[0m  Go version: go1.9.2
+[33mFBIpeer2_1  |[0m  OS/Arch: linux/amd64
+[33mFBIpeer2_1  |[0m  Experimental features: false
+[33mFBIpeer2_1  |[0m  Chaincode:
+[33mFBIpeer2_1  |[0m   Base Image Version: 0.4.6
+[33mFBIpeer2_1  |[0m   Base Docker Namespace: hyperledger
+[33mFBIpeer2_1  |[0m   Base Docker Label: org.hyperledger.fabric
+[33mFBIpeer2_1  |[0m   Docker Namespace: hyperledger
+[33mFBIpeer2_1  |[0m 
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.907 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.907 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[36morderer_1   |[0m 2018-09-08 09:29:51.063 UTC [orderer/common/server] initializeServerConfig -> INFO 002[0m Starting orderer with TLS enabled
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.940 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.940 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[36morderer_1   |[0m 2018-09-08 09:29:51.075 UTC [fsblkstorage] newBlockfileMgr -> INFO 003[0m Getting block information from block storage
+[36morderer_1   |[0m 2018-09-08 09:29:51.084 UTC [orderer/commmon/multichannel] NewRegistrar -> INFO 004[0m Starting system channel 'testchainid' with genesis block hash 5c240af991bcfb1b4cc24bea03d5c2d6f994be3692b58e1b26b3aa7c4bf805b1 and orderer type solo
+[36morderer_1   |[0m 2018-09-08 09:29:51.084 UTC [orderer/common/server] Start -> INFO 005[0m Starting orderer:
+[36morderer_1   |[0m  Version: 1.1.0
+[36morderer_1   |[0m  Go version: go1.9.2
+[36morderer_1   |[0m  OS/Arch: linux/amd64
+[36morderer_1   |[0m  Experimental features: false
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.940 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 192.168.16.3:7151
+[36morderer_1   |[0m 2018-09-08 09:29:51.084 UTC [orderer/common/server] Start -> INFO 006[0m Beginning to serve requests
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.941 UTC [peer] func1 -> INFO 007[0m Returning peer1.fbi.citizens.com:7151
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.941 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 192.168.16.3:7151
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.941 UTC [peer] func1 -> INFO 009[0m Returning peer1.fbi.citizens.com:7151
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.953 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.961 UTC [eventhub_producer] start -> INFO 00b[0m Event processor started
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.961 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Entering computeChaincodeEndpoint with peerHostname: peer1.fbi.citizens.com
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.962 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00d[0m Exit with ccEndpoint: peer1.fbi.citizens.com:7152
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.969 UTC [chaincode] NewChaincodeSupport -> INFO 00e[0m Chaincode support using peerAddress: peer1.fbi.citizens.com:7152
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.970 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.971 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.971 UTC [sccapi] registerSysCC -> INFO 011[0m system chaincode escc(github.com/hyperledger/fabric/core/scc/escc) registered
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.972 UTC [sccapi] registerSysCC -> INFO 012[0m system chaincode vscc(github.com/hyperledger/fabric/core/scc/vscc) registered
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.972 UTC [sccapi] registerSysCC -> INFO 013[0m system chaincode qscc(github.com/hyperledger/fabric/core/chaincode/qscc) registered
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.979 UTC [gossip/service] func1 -> INFO 014[0m Initialize gossip with endpoint peer1.fbi.citizens.com:7151 and bootstrap set [peer0.fbi.citizens.com:7051]
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.985 UTC [msp] DeserializeIdentity -> INFO 015[0m Obtaining identity
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.989 UTC [gossip/discovery] NewDiscoveryService -> INFO 016[0m Started {peer1.fbi.citizens.com:7151 [] [179 154 108 200 193 14 111 56 56 99 52 125 96 172 250 110 67 214 210 1 26 141 54 180 106 188 194 234 85 190 189 236] peer1.fbi.citizens.com:7151 <nil>} incTime is 1536398991987757900
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.993 UTC [gossip/gossip] NewGossipService -> INFO 017[0m Creating gossip service with self membership of {peer1.fbi.citizens.com:7151 [] [179 154 108 200 193 14 111 56 56 99 52 125 96 172 250 110 67 214 210 1 26 141 54 180 106 188 194 234 85 190 189 236] peer1.fbi.citizens.com:7151 <nil>}
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.995 UTC [gossip/gossip] start -> INFO 018[0m Gossip instance peer1.fbi.citizens.com:7151 started
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.998 UTC [cscc] Init -> INFO 019[0m Init CSCC
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:51.998 UTC [sccapi] deploySysCC -> INFO 01a[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.001 UTC [sccapi] deploySysCC -> INFO 01b[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.002 UTC [escc] Init -> INFO 01c[0m Successfully initialized ESCC
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.002 UTC [sccapi] deploySysCC -> INFO 01d[0m system chaincode escc/(github.com/hyperledger/fabric/core/scc/escc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.004 UTC [sccapi] deploySysCC -> INFO 01e[0m system chaincode vscc/(github.com/hyperledger/fabric/core/scc/vscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.006 UTC [qscc] Init -> INFO 01f[0m Init QSCC
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.006 UTC [sccapi] deploySysCC -> INFO 020[0m system chaincode qscc/(github.com/hyperledger/fabric/core/chaincode/qscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.006 UTC [nodeCmd] initSysCCs -> INFO 021[0m Deployed system chaincodes
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.006 UTC [nodeCmd] serve -> INFO 022[0m Starting peer with ID=[name:"peer1.fbi.citizens.com" ], network ID=[citizens], address=[peer1.fbi.citizens.com:7151]
+[33mFBIpeer2_1  |[0m 2018-09-08 09:29:52.008 UTC [nodeCmd] serve -> INFO 023[0m Started peer with ID=[name:"peer1.fbi.citizens.com" ], network ID=[citizens], address=[peer1.fbi.citizens.com:7151]
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.044 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[32mFBIpeer1_1  |[0m  Version: 1.1.0
+[32mFBIpeer1_1  |[0m  Go version: go1.9.2
+[32mFBIpeer1_1  |[0m  OS/Arch: linux/amd64
+[32mFBIpeer1_1  |[0m  Experimental features: false
+[32mFBIpeer1_1  |[0m  Chaincode:
+[32mFBIpeer1_1  |[0m   Base Image Version: 0.4.6
+[32mFBIpeer1_1  |[0m   Base Docker Namespace: hyperledger
+[32mFBIpeer1_1  |[0m   Base Docker Label: org.hyperledger.fabric
+[32mFBIpeer1_1  |[0m   Docker Namespace: hyperledger
+[32mFBIpeer1_1  |[0m 
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.045 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.045 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.061 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.061 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.061 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 192.168.16.4:7051
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.062 UTC [peer] func1 -> INFO 007[0m Returning peer0.fbi.citizens.com:7051
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.062 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 192.168.16.4:7051
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.063 UTC [peer] func1 -> INFO 009[0m Returning peer0.fbi.citizens.com:7051
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.070 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.076 UTC [eventhub_producer] start -> INFO 00b[0m Event processor started
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.076 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Entering computeChaincodeEndpoint with peerHostname: peer0.fbi.citizens.com
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.077 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00d[0m Exit with ccEndpoint: peer0.fbi.citizens.com:7052
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.084 UTC [chaincode] NewChaincodeSupport -> INFO 00e[0m Chaincode support using peerAddress: peer0.fbi.citizens.com:7052
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.085 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.085 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.086 UTC [sccapi] registerSysCC -> INFO 011[0m system chaincode escc(github.com/hyperledger/fabric/core/scc/escc) registered
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.086 UTC [sccapi] registerSysCC -> INFO 012[0m system chaincode vscc(github.com/hyperledger/fabric/core/scc/vscc) registered
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.087 UTC [sccapi] registerSysCC -> INFO 013[0m system chaincode qscc(github.com/hyperledger/fabric/core/chaincode/qscc) registered
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.093 UTC [gossip/service] func1 -> INFO 014[0m Initialize gossip with endpoint peer0.fbi.citizens.com:7051 and bootstrap set [127.0.0.1:7051]
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.100 UTC [msp] DeserializeIdentity -> INFO 015[0m Obtaining identity
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.104 UTC [gossip/discovery] NewDiscoveryService -> INFO 016[0m Started {peer0.fbi.citizens.com:7051 [] [11 181 240 193 214 37 45 118 198 216 113 38 185 29 76 66 199 22 77 12 142 78 94 122 196 203 179 127 247 83 95 156] peer0.fbi.citizens.com:7051 <nil>} incTime is 1536398992103424100
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.104 UTC [gossip/gossip] NewGossipService -> INFO 017[0m Creating gossip service with self membership of {peer0.fbi.citizens.com:7051 [] [11 181 240 193 214 37 45 118 198 216 113 38 185 29 76 66 199 22 77 12 142 78 94 122 196 203 179 127 247 83 95 156] peer0.fbi.citizens.com:7051 <nil>}
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.108 UTC [gossip/gossip] start -> INFO 018[0m Gossip instance peer0.fbi.citizens.com:7051 started
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.110 UTC [cscc] Init -> INFO 019[0m Init CSCC
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.110 UTC [sccapi] deploySysCC -> INFO 01a[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.113 UTC [sccapi] deploySysCC -> INFO 01b[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.114 UTC [escc] Init -> INFO 01c[0m Successfully initialized ESCC
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.114 UTC [sccapi] deploySysCC -> INFO 01d[0m system chaincode escc/(github.com/hyperledger/fabric/core/scc/escc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.115 UTC [sccapi] deploySysCC -> INFO 01e[0m system chaincode vscc/(github.com/hyperledger/fabric/core/scc/vscc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.116 UTC [qscc] Init -> INFO 01f[0m Init QSCC
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.117 UTC [sccapi] deploySysCC -> INFO 020[0m system chaincode qscc/(github.com/hyperledger/fabric/core/chaincode/qscc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.117 UTC [nodeCmd] initSysCCs -> INFO 021[0m Deployed system chaincodes
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.118 UTC [nodeCmd] serve -> INFO 022[0m Starting peer with ID=[name:"peer0.fbi.citizens.com" ], network ID=[citizens], address=[peer0.fbi.citizens.com:7051]
+[32mFBIpeer1_1  |[0m 2018-09-08 09:29:52.119 UTC [nodeCmd] serve -> INFO 023[0m Started peer with ID=[name:"peer0.fbi.citizens.com" ], network ID=[citizens], address=[peer0.fbi.citizens.com:7051]
+[36morderer_1   |[0m 2018-09-08 09:30:01.394 UTC [msp] DeserializeIdentity -> INFO 007[0m Obtaining identity
+[36morderer_1   |[0m 2018-09-08 09:30:01.395 UTC [msp] DeserializeIdentity -> INFO 008[0m Obtaining identity
+[36morderer_1   |[0m 2018-09-08 09:30:01.398 UTC [msp] DeserializeIdentity -> INFO 009[0m Obtaining identity
+[36morderer_1   |[0m 2018-09-08 09:30:01.410 UTC [fsblkstorage] newBlockfileMgr -> INFO 00a[0m Getting block information from block storage
+[36morderer_1   |[0m 2018-09-08 09:30:01.415 UTC [orderer/commmon/multichannel] newChain -> INFO 00b[0m Created and starting new chain citizens
+[36morderer_1   |[0m 2018-09-08 09:30:02.377 UTC [msp] DeserializeIdentity -> INFO 00c[0m Obtaining identity
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.385 UTC [ledgermgmt] CreateLedger -> INFO 024[0m Creating ledger [citizens] with genesis block
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.387 UTC [ledgermgmt] CreateLedger -> INFO 024[0m Creating ledger [citizens] with genesis block
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.390 UTC [fsblkstorage] newBlockfileMgr -> INFO 025[0m Getting block information from block storage
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.390 UTC [fsblkstorage] newBlockfileMgr -> INFO 025[0m Getting block information from block storage
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.399 UTC [kvledger] CommitWithPvtData -> INFO 026[0m Channel [citizens]: Committed block [0] with 1 transaction(s)
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.401 UTC [kvledger] CommitWithPvtData -> INFO 026[0m Channel [citizens]: Committed block [0] with 1 transaction(s)
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.403 UTC [ledgermgmt] CreateLedger -> INFO 027[0m Created ledger [citizens] with genesis block
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.405 UTC [ledgermgmt] CreateLedger -> INFO 027[0m Created ledger [citizens] with genesis block
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.422 UTC [cscc] Init -> INFO 028[0m Init CSCC
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.423 UTC [sccapi] deploySysCC -> INFO 029[0m system chaincode cscc/citizens(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.424 UTC [sccapi] deploySysCC -> INFO 02a[0m system chaincode lscc/citizens(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.424 UTC [escc] Init -> INFO 02b[0m Successfully initialized ESCC
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.424 UTC [sccapi] deploySysCC -> INFO 02c[0m system chaincode escc/citizens(github.com/hyperledger/fabric/core/scc/escc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.423 UTC [cscc] Init -> INFO 028[0m Init CSCC
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.424 UTC [sccapi] deploySysCC -> INFO 029[0m system chaincode cscc/citizens(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.424 UTC [sccapi] deploySysCC -> INFO 02a[0m system chaincode lscc/citizens(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.425 UTC [escc] Init -> INFO 02b[0m Successfully initialized ESCC
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.425 UTC [sccapi] deploySysCC -> INFO 02d[0m system chaincode vscc/citizens(github.com/hyperledger/fabric/core/scc/vscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.425 UTC [sccapi] deploySysCC -> INFO 02c[0m system chaincode escc/citizens(github.com/hyperledger/fabric/core/scc/escc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.426 UTC [qscc] Init -> INFO 02e[0m Init QSCC
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.426 UTC [sccapi] deploySysCC -> INFO 02f[0m system chaincode qscc/citizens(github.com/hyperledger/fabric/core/chaincode/qscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.426 UTC [sccapi] deploySysCC -> INFO 02d[0m system chaincode vscc/citizens(github.com/hyperledger/fabric/core/scc/vscc) deployed
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.427 UTC [qscc] Init -> INFO 02e[0m Init QSCC
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.428 UTC [sccapi] deploySysCC -> INFO 02f[0m system chaincode qscc/citizens(github.com/hyperledger/fabric/core/chaincode/qscc) deployed
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.441 UTC [lscc] executeInstall -> INFO 030[0m Installed Chaincode [citizens-service] Version [0] to peer
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:02.441 UTC [lscc] executeInstall -> INFO 030[0m Installed Chaincode [citizens-service] Version [0] to peer
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.467 UTC [golang-platform] GenerateDockerBuild -> INFO 031[0m building chaincode with ldflagsOpt: '-ldflags "-linkmode external -extldflags '-static'"'
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:02.467 UTC [golang-platform] GenerateDockerBuild -> INFO 032[0m building chaincode with tags: 
+[36morderer_1   |[0m 2018-09-08 09:30:08.434 UTC [msp] DeserializeIdentity -> INFO 00d[0m Obtaining identity
+[33mFBIpeer2_1  |[0m [33m2018-09-08 09:30:08.440 UTC [deliveryClient] connect -> WARN 031[0m Failed running post-connection procedures: closing
+[36morderer_1   |[0m [33m2018-09-08 09:30:08.441 UTC [common/deliver] Handle -> WARN 00e[0m Error reading from 192.168.16.3:49742: rpc error: code = Canceled desc = context canceled
+[33mFBIpeer2_1  |[0m [33m2018-09-08 09:30:08.442 UTC [deliveryClient] try -> WARN 032[0m Got error: closing , at 1 attempt. Retrying in 1s
+[33mFBIpeer2_1  |[0m [33m2018-09-08 09:30:08.442 UTC [blocksProvider] DeliverBlocks -> WARN 033[0m [citizens] Receive error: Client is closing
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:17.779 UTC [cceventmgmt] HandleStateUpdates -> INFO 033[0m Channel [citizens]: Handling LSCC state update for chaincode [citizens-service]
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:17.785 UTC [kvledger] CommitWithPvtData -> INFO 034[0m Channel [citizens]: Committed block [1] with 1 transaction(s)
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:17.792 UTC [cceventmgmt] HandleStateUpdates -> INFO 034[0m Channel [citizens]: Handling LSCC state update for chaincode [citizens-service]
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:17.802 UTC [kvledger] CommitWithPvtData -> INFO 035[0m Channel [citizens]: Committed block [1] with 1 transaction(s)
+[36morderer_1   |[0m 2018-09-08 09:30:17.806 UTC [msp] DeserializeIdentity -> INFO 00f[0m Obtaining identity
+[32mFBIpeer1_1  |[0m 2018-09-08 09:30:19.824 UTC [kvledger] CommitWithPvtData -> INFO 035[0m Channel [citizens]: Committed block [2] with 1 transaction(s)
+[33mFBIpeer2_1  |[0m 2018-09-08 09:30:19.834 UTC [kvledger] CommitWithPvtData -> INFO 036[0m Channel [citizens]: Committed block [2] with 1 transaction(s)
+[32mFBIpeer1_1  |[0m 2018-09-08 09:31:09.320 UTC [main] main -> INFO 036[0m Exiting.....
+[33mFBIpeer2_1  |[0m 2018-09-08 09:31:09.327 UTC [main] main -> INFO 037[0m Exiting.....
+[32mcitizens_FBIpeer1_1 exited with code 0
+[0m[33mcitizens_FBIpeer2_1 exited with code 0
+[0m[36mcitizens_orderer_1 exited with code 2
+[0m
